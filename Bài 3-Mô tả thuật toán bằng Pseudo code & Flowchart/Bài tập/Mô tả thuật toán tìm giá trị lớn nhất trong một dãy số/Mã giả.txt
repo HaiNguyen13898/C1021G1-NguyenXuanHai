@@ -1,0 +1,14 @@
+Begin 
+ Input n
+ Input a1, a2,...., an
+       i = 2
+       Max = a1
+       While i <= n
+  Do
+    If ai > max
+     Display max= ai
+    end if 
+    i++
+    end do
+     Display max 
+End.
