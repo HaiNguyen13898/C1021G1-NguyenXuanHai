@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple table</title>
+    <style>
+        .table2,td.td2,th {
+            border: 1px solid black;
+        }
+
+        th.hai {
+            background-color: yellow;
+            color: black;
+        }
+
+        .table2 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td.ba, tr.ba {
+            text-align: center
+        }
+
+        tr.ba {
+            background-color: orange
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            margin: 50px 400px 10px 400px;
+
+        }
+
+        td.td2 {
+            text-align: center;
+        }
+        th.T {
+            background-color: yellow;
+        }
+        tr.L {
+            background-color: yellowgreen;
+        }
+        td.right {
+            text-align: right;
+        }
+        .table1{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THỜI KHÓA BIỂU</h1>
+    <table class="table1" style="margin:auto;">
+        <tbody>
+            <tr>
+                <td>Lớp T0908I</td>
+                <td></td>
+                <td class="right">Thời gian học: 13h30-17h30</td>
+            </tr>
+            <tr>
+                <td>Giáo viên: KhoaNV</td>
+                <td></td>
+                <td class="right">Ngày học: thứ 3, 5, 7 </td>
+            </tr>
+            <tr>
+                <td>Phòng học:Class3/lab3</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table class="table2" style="margin:auto;">
+        <tr>
+            <th colspan="3"></th>
+            <th class="T">Thứ 3</th>
+            <th class="T">Thứ 5</th>
+            <th class="T">Thứ7</th>
+        </tr>
+
+        <tr class="L">
+            <td class="td2">Tuần</td>
+            <td class="td2">Ngày bắt đầu</td>
+            <td class="td2">Ngày kết thúc</td>
+            <td class="td2" colspan=3>Môn học </td>
+        </tr>
+        <tr>
+            <td class="td2">01</td>
+            <td class="td2">01/09/2009</td>
+            <td class="td2">05/09/2009</td>
+            <td class="td2">CF-T1, L1</td>
+            <td class="td2">CF-T2, L2</td>
+            <td class="td2">CF-T3, L3</td>
+        </tr>
+        <tr>
+            <td class="td2">3</td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
