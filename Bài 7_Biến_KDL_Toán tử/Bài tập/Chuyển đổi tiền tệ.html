@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+
+<body>
+    <form name="Changemoney">
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    <b>Amount</b>
+                </td>
+                <td>
+                    <b>From Currency</b>
+                </td>
+                <td>
+                    <b>To Currency</b>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input id="inputmoney" type="text"></td>
+                <td>
+                    <select id="from" style="width: 100%;">
+                        <option value="vn">VietNam</option>
+                        <option value="usd">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select  id="to" style="width: 100%;">
+                        <option value="usd">USD</option>
+                        <option value="vn">VietNAm</option>
+                    </select>
+                </td>
+                <td><input type="button"  onclick="result.value=covert()" value="covert"></td>
+
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type="text" id="result" value=""></td>
+            </tr>
+
+        </table><br>
+    </form>
+    <script>
+        
+          function covert(){
+            let x=parseInt(document.getElementById("inputmoney").value) ;
+            let a=document.getElementById("from");
+            let b=document.getElementById("to");
+            let covert;
+            if(a.value =="usd" && b.value == "vn"){
+                covert=x*23000
+            }
+            else if(a.value=="vn" && b.value=="usd"){
+                covert=x/23000
+            };
+            return covert;
+            
+          }
+    </script>
+</body>
+
+</html>

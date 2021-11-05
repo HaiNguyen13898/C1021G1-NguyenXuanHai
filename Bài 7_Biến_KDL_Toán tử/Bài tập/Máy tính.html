@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+
+<body>
+   <form id="maytinh">
+        <table  style=" margin: auto; height: 100px;" >
+            <tr>
+                <td>
+                    <input id="nhapso1" type="text"  >
+                </td>
+                <td>
+                    <input id="nhapso2" type="text" >
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input id="a" onclick="add()" type="button" value="Addition(+)">
+                    <input id="b" onclick="sub()" type="button" value="Subtraction(-)">
+                </td>
+                
+                <td>
+                    <input id="c" onclick="mul()" type="button" value="Multiplication(*)">
+                    <input id="d" onclick="divi()" type="button" value="Division(/)">
+
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <b>Result Division: </b> <span id="z"></span>
+                </td>
+            </tr>
+        </table><br>
+               
+     <script>
+         function add(){
+            let g=parseInt (document.getElementById("nhapso1").value);
+            let h=parseInt (document.getElementById("nhapso2").value);
+            result= g+h;
+            document.getElementById("z").innerHTML=result;
+        
+         }
+         function sub(){
+            let g=parseInt (document.getElementById("nhapso1").value);
+            let h=parseInt (document.getElementById("nhapso2").value); 
+            result= g-h;
+            document.getElementById("z").innerHTML=result;
+        
+         }
+         function mul(){
+            let g=parseInt (document.getElementById("nhapso1").value);
+            let h=parseInt (document.getElementById("nhapso2").value);
+            result= g*h;
+            document.getElementById("z").innerHTML=result;
+        
+         }
+         function divi(){
+            let g=parseInt (document.getElementById("nhapso1").value);
+            let h=parseInt (document.getElementById("nhapso2").value);
+            result= g/h;
+            document.getElementById("z").innerHTML=result;
+        
+         }
+
+     </script>   
+   </form>
+</body>
+
+</html>
