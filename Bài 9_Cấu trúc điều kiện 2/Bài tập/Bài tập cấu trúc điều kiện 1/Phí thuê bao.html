@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+
+<body>
+    <script>
+        let phithuebao=25000;
+        let a=parseInt(prompt('Số phút gọi:'));
+        if (a<=50){
+            b=phithuebao+600*a
+            alert('Phí thuê bao tháng này là: ' + b+ 'VND');
+        }else if( 50<a && a<200){
+            b=phithuebao+(a-50)*400+50*600;
+            alert('Phí thuê bao tháng này là: '+ b+ 'VND');
+        }else {
+            b=phithuebao+50*600+150*400+(a-200)*200
+            alert('Phí thuê bao tháng này là: '+ b +'VND');
+        }
+        
+    </script>
+
+x
+</body>
+
+</html>

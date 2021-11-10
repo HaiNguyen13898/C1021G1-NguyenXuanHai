@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt('Tiền lương:'));
+        if (0 < a && a < 5e6) {
+            alert('không tính thuế');
+        } else if (5e6 < a && a < 10e6) {
+            alert('Không tính thuế');
+        } else if (11e6 < a && a < 18e6){
+            let b=a*10/100
+            alert('Thuế thu nhập = '+b+'vnd')
+
+        }else{
+            let b=a*12/100
+            alert('Thuế thu nhập = '+b+'vnd')
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

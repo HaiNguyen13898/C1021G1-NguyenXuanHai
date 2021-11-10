@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+
+<body>
+    <script>
+       let a=parseInt(prompt('Số kwh: '))
+       if(0<a&&a<50){
+           b=a*1400
+           alert('Tiền điện tháng này là: '+ b);
+       }else if( 50<a&&a<100){
+           b=(a-50)*1500+50*1400
+           alert('Tiền điện tháng này là: '+ b);
+        
+       }else if (100<a&&a<200){
+           b=50*1400+100*1500+(a-100)*1700
+           alert('Tiền điện tháng này là: '+ b)
+       }else{ 
+           b=50*1400+50*1500+100*1700+(a-200)*4000
+           alert('Tiền điện tháng này: '+ b);
+    }
+
+    </script>
+
+
+</body>
+
+</html>
