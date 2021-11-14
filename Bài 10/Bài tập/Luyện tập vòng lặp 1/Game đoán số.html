@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai 8</title>
+</head>
+
+<body>
+    <input type="button" value="Play!" onclick="play()" id="btn1">
+    <h1 id="result"><br></h1>
+    <script>
+        let res = document.getElementById("result");
+        function play() {
+            let count = 0;
+            let min = parseInt(prompt("Nhập từ khoản", ""));
+            let max = parseInt(prompt("Đến khoản", ""));
+            let rand = Math.floor(Math.random() * (max - min + 1) + min);
+            while (count < max) {
+                let doan = parseInt(prompt("Nhập số bạn đoán (Từ " + min + " Đến " + max + ") :"));
+                if (rand === doan) {
+                    res.innerHTML = 'Bạn đã đoán đúng ! số bí mật là : ' + rand;
+                    break;
+                } else {
+                    if (doan > rand) {
+                        alert(' số đoán < số bí mật')
+                    } else {
+                        alert(' số đoán > số bí mật')
+                    }
+                    count += 1;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

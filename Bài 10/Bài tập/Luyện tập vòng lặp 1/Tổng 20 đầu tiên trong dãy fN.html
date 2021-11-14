@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+
+<body>
+    <script>
+        let i = 0;
+        let a = 0;
+        let b = 1;
+        let fn;
+        document.write('20 đầu tiên số trong dãy fN là: ')
+        while (i < 20) {
+            document.write(b + ', ')
+            fn = a + b;
+            a = b;
+            b = fn;
+            i++;
+        }
+        document.write('<br>');
+        document.write('<br>');
+        total = b + a - 1;
+        document.write('Tổng 20 số trong dãy fN là: ' + total);
+    </script>
+</body>
+
+</html>

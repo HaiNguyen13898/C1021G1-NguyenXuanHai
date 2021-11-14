@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+
+<body>
+    <script>
+
+        for (let num = 1; num <= 100; num++) {
+            if (num % 3 == 0 && num % 5 == 0) {
+                document.write('fizzbuzz, ')
+            } else if (num % 5 == 0) {
+                document.write('buzz, ')
+            } else if (num % 3 == 0) {
+                document.write('fizz, ')
+            } else {
+                document.write(num + ',')
+            }
+        }
+    </script>
+</body>
+
+</html>
