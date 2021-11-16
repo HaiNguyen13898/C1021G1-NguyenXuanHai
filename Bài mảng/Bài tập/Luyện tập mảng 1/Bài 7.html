@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+
+<body>
+    Nhập số <input id='nhapSo' type="text">
+    <button onclick="click()">Result</button><br><br>
+    Khảo sát: <span id='kq'></span><br>
+
+    <script>
+        function click() {
+            let num = parseInt(document.getElementById('nhapSo').value);
+            document.getElementById('kq').innerHTML = num;
+
+
+        }
+        let numberArray = [1, 2, 3, 12, -15, -22, 7, 8, -9, 35];
+        document.write('Các phần tử trong mảng là: '); document.write(numberArray, '</br>')
+
+
+    </script>
+</body>
+
+</html>
