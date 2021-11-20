@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+
+<body>
+    <h1>Temperature Converter</h1>
+    <b>Type a value in the Fahernheit field to convert the value to Celcius</b> <br>
+    <b>Fahernheit</b>
+    <input type="number" placeholder="Fahernheit" onchange="temperatureConverter(this.value)"> <br>
+    <b> Celcius:</b> <span id='outputCelcius'></span>
+
+    <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelcius").innerHTML = (valNum - 32) / 1.8;
+        }
+    </script>
+</body>
+
+</html>

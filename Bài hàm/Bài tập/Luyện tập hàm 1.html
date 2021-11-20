@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+
+<body>
+    <!-- <h2> Bài 5.1, cách 1 (fale)
+        FamosName = [Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus] <br>
+        Star = [Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo]
+    </h2>
+    <b>Name:</b>
+    <input type="text" id="inputname">
+    <input type="button" onclick="click()" value="Search"><br><br>
+    <b>Tên chòm sao tương ứng là </b> <span id='kq'></span> -->
+
+    <script>
+        // Bài 5.1, cách 1 (fale)
+        // let result = document.getElementById("kq");
+        // function click() {
+        //     let input = document.getElementById("inputname").value;
+        //     let famosName = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+        //     let star = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+        //     for (let i = 0; i < famosName.length; i++) {
+        //         if (input == famosName[i]) {
+        //             result.innerHTML = star[i]
+        //             break;
+        //         } else {
+        //             result.innerHTML = 'Không tìm thấy dữ liệu'
+        //         }
+
+        //     }
+
+        // }
+
+       // Bài 5.1 cách 2:
+        function printStar() {
+            let name=prompt('Nhập tên người nổi tiếng');
+            let famosName = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+            let star = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+            for (let i = 0; i < famosName.length; i++){
+                if(name===famosName[i]){
+                   return  alert('Chòm sao của người nổi tiếng đó là: '+ star[famosName.indexOf(name)])
+                }
+            } return alert('Không có đữ liệu được tìm thấy')
+
+        }
+        printStar();
+
+
+        // Bài 1.1:
+        // function alertmesseage(){
+        //     alert('Xin chào tháng 12');
+        // }
+        // alertmesseage();
+
+        // Bài 2.1:
+        // function number(a) {
+        //     return a + 1;
+        // }
+        // let b = number(1)
+        // alert(b)
+
+
+        // Bài 3.1
+        // function number(a, b) {
+        //     if (a > b) {
+        //         alert('Số a lớn hơn số b');
+        //     } else {
+        //         return a + b;
+        //     }
+        // }
+        // let sum = number(5, 4);
+        // alert(sum)
+
+
+
+        // Bài 4.1
+        // function addNumbers() {
+        //     firstNum = 4;
+        //     secondNum = 8;
+        //     result = firstNum + secondNum;
+        //     return result;
+        // }
+        // result = 0;
+        // alert('Giá trị của result trước khi có hàm ' + result)
+        // addNumbers()
+        // result = addNumbers()
+        // alert('Giá của result sau khi có hàm ' + result)
+
+    </script>
+</body>
+
+</html>
