@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+        class Phone {
+            constructor() {
+                this.pin = 100;
+                this.vungSoanthao = "";
+                this.vungHopthuden = [];
+                this.vungTindagui = [];
+                this.check= true;
+            }
+
+            turnOnOff(){
+                if(this.check==true){
+                    confirm('Mở điện thoại')
+                }else{
+                    confirm("Tắt điện thoại")
+                }
+            }
+            charge(){
+                if(this.pin<50){
+                    console.log('Vui lòng sạc pin')
+                }else{
+                    console.log('Dùng tẹt ga đi buddy')
+                }
+            }
+            wirteMessenger(text){
+                this.vungSoanthao=text;
+            }
+            reviceMessage(text){
+                this.vungHopthuden.push(text);
+            }
+           sendMessage(text, phone){
+               this.wirteMessenger(text)
+               this.vungTindagui.push(this.vungSoanthao);
+               phone.reviceMessage(this.vungTindagui);
+           }
+             display(){
+                 console.log(this.vungHopthuden);
+             }
+
+        }
+        let nokia=new Phone();
+
+        let iphone=new Phone();
+
+        nokia.sendMessage("Hello", iphone);
+        iphone.display();
+
+        // console.log(nokia.turnOnOff())
+        // console.log(iphone.charge())
+       
+    </script>
+</body>
+
+</html>
